@@ -12,7 +12,7 @@
 @import url("../accelerate-theme/style.css");
 
 .home-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
 #masthead {
   background: none repeat scroll 0 0 #45ac9d;
@@ -20,23 +20,97 @@
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
+#masthead nav ul li{
+    float: left;
+    margin: 0 10px;
+}
+/*blog post on homepage*/
+
+
 .blog-post {
-	width: 50%;
+	width: 44.75%;
+    padding-right: 50px;
 	float: left;
-	margin-bottom: 2em;
+	/*margin-bottom: 2em;    not sure if need to keep*/
 }
 .blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+    font: 16px 'Montserrat', 'Open Sans', Arial, sans-serif;  /*700 1em/1.75  not sure if needed */
     color: #a6a6a6;
     text-transform: uppercase;
-    margin: 2em 0 .5em;
+    margin-top: 0;
+    /* margin: 2em 0 .5em;*/
 }
 .blog-post h3 {
 	font-size: 1.5em;
+    font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
+}
+.blog-post h2 {
+    font: 700 24px 'Montserrat', 'Open Sans', Arial, sans-serif;
+    margin: 36px 0;
+}
+.blog-post .read-more-link {
+    font: 700 24px 'Monserrat','Open Sans', Arial, sans-serif,;
+    color: #45ac9d;
+    text-transform: uppercase;
 }
 .read-more-link {
-	font-family: 'Montserrat';
+	font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+/*featured work*/
+.featured-work .site-content{
+ display: block;
+}
+.featured-work h4{
+    font: 700 1em/1.75 'Monserrat','Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.featured-work h3{
+    font-size: 1em;
+}
+.featured-work ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.homepage-featured-work {
+    width: 100%;
+}
+
+.homepage-featured-work li{
+    float: left;
+    display: block;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.individual-featured-work {
+	display: inline-block;
+	padding-right: 10%;
+}
+/*Case Studies*/
+article.case-study {
+    margin: 40px 0;
+    overflow: auto;
+}
+aside.case-study-sidebar {
+    float: left;
+    width: 314px;
+    margin: 0 40px 0 0;
+}
+div.case-study-images {
+    float: left;
+    width: 606px;
+}
+div.case-study-images img{
+    display: block;
+    margin-bottom: 50px;
+    border: 1px, solid, #dddddd;
+    width: 100%;
+    height: auto;
+
 }

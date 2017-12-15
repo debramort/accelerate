@@ -14,6 +14,10 @@
 .home-page {
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 }
+.home-page img {
+    max-width: 100%;
+    height: auto;
+}
 #masthead {
   background: none repeat scroll 0 0 #45ac9d;
 }
@@ -33,14 +37,14 @@
 	float: left;
 	/*margin-bottom: 2em;    not sure if need to keep*/
 }
-.blog-post h4 {
+.blog-tweet h4 {
     font: 16px 'Montserrat', 'Open Sans', Arial, sans-serif;  /*700 1em/1.75  not sure if needed */
     color: #a6a6a6;
     text-transform: uppercase;
-    margin-top: 0;
-    /* margin: 2em 0 .5em;*/
+    /*margin-top: 0;*/
+    margin: 2em 0 .5em;
 }
-.blog-post h3 {
+.blog-tweet h3 {
 	font-size: 1.5em;
     font-family: 'Montserrat', 'Open Sans', Arial, sans-serif;
 }
@@ -59,6 +63,31 @@
 	color: #45ac9d;
 	text-transform: uppercase;
 }
+
+/*TWITTER WIDGET*/
+
+.twitter-app {
+	width: 44.75%;
+    padding-right: 0px;
+    padding-left: 100px;
+	float: left;
+	margin-bottom: 2em; 
+}
+
+.twitter-app ul{
+    list-style: none;
+    margin: -2em 0 5em;
+    
+   
+}
+
+.twitter-app .read-more-link {
+    font: 700 24px 'Monserrat','Open Sans', Arial, sans-serif,;
+    color: #45ac9d;
+    text-transform: uppercase;
+}
+
+
 /*featured work*/
 .featured-work .site-content{
  display: block;
@@ -92,6 +121,7 @@
 	display: inline-block;
 	padding-right: 10%;
 }
+
 /*Case Studies*/
 article.case-study {
     margin: 40px 0;
@@ -113,4 +143,231 @@ div.case-study-images img{
     width: 100%;
     height: auto;
 
+}
+
+/*Social Media Menu and Footer*/
+
+.social-media-navigation ul{
+	list-style-type: none;
+}
+
+.social-media-navigation li{
+    display: inline-block;
+}
+.social-media-navigation {
+    width: auto;
+}
+
+li.social-icon a{
+    color: white;
+    font-size: 12px;
+    display: block;
+    text-align: center; 
+    background-color:  #3b3b3b;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+i.icon-2x {
+    line-height: inherit;
+}
+
+
+
+
+/*ABOUT US SERVICES PAGE*/
+
+ 
+.about .homepage{
+    margin-top: auto;
+} 
+.about-page {
+    height: 360px;
+    margin: 0 0 50px;
+    background-position: 0px -250px;
+}
+.about-page, .homepage img {
+    max-width: 100%;
+    height: auto;
+}
+.about-page p {
+    font-size: 1.6em;
+    color: white;
+    margin-top: -75px;
+    line-height: 1.45;
+}
+
+.services-content h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.services-content p {
+    text-align: center;
+    font: 400 1em/1.75 'Monserrat','Open Sans', Arial, sans-serif;
+    margin: 0 0 10px 0;
+}
+
+.service-icon {
+    width: 23%;
+    float: left;
+}
+.service-text {
+    width: 74%;
+    float: left;
+    margin-top: -50px;
+}
+.left-service-icon {
+    margin-right: 3%;
+}
+.right-service-icon {
+    margin-left: 3%;
+}
+.service-area {
+    clear: both;
+    padding-top: 70px;
+    overflow: auto;
+}
+.service-area figure {
+    vertical-align: middle;
+}
+.service-text h2 {
+    font: 400 1.75em/1.75 'Monserrat','Open Sans', Arial, sans-serif;
+}
+.services-area-content {
+    margin-bottom: 70px;
+    
+}
+/*CONTACT US FOOTER*/
+
+.about-contact-text a {
+    color: #fff;
+    font: 700 1.4em  'Monserrat','Open Sans', Arial, sans-serif;
+    text-align: center;
+}
+.about-contact-text .button {
+    margin-top: 40px;
+    margin-left: 30px;
+    float: left;
+}
+.about-contact-text h3{
+    float: left;
+    font:  700 1.75em  'Monserrat','Open Sans', Arial, sans-serif;
+    color: #3b3b3b;
+    margin-right: 20px;
+}
+.about-page-contact {
+    margin-bottom: -30px;
+    margin-top: -20px;
+}
+
+/*CONTACT PAGE STYLES*/
+
+
+.contact .content {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.field-wrap button, .field-wrap input[type=button], .field-wrap input[type=submit]{
+    background: #45ac9d;
+    float: right;
+}
+
+.content h2 {
+    font-size: 1.5em;
+    margin-top: 0px;
+}
+.nf-field-label label {
+    font-weight: 400;
+    font-size: .9em;
+}
+#nf-field-3 {
+    height: 175px;
+}
+#nf-field-1 {
+    height: 40px;
+}
+#nf-field-2 {
+    height: 40px;
+}
+ 
+.ninja-forms-req-symbol{
+    display: none;
+}
+.nf-form-fields-required {
+  display: none;
+}
+
+/*SUCCESS PAGE*/
+
+.nf-response-msg h2{
+    
+}
+.nf-response-msg h3{
+    
+}
+
+/*BLOG PAGE*/
+
+
+.widget-title{
+    color: : #3b3b3b;
+} 
+
+.mc4wp-form-fields input{
+    padding: ;
+    
+}
+
+/*404 Page*/
+
+.error404 {
+    background: url("img/404-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    background-position: 0px, -100px;
+
+}
+.error404 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.error404 h1{
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.error404 .site-content {
+    height: 500px;
+}
+
+
+
+
+
+.our-services .site-content{
+    display: block;
+    margin-bottom: 80px;
+}
+.quarter-width {
+	display: inline-block;
+	padding-right: 10%;
+} 
+.our-services h3{
+    font-size: 0.8em;
+}
+.our-services h4{
+    font: 700 1em/1.75 'Monserrat','Open Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+.our-services li{
+    float: left;
+    display: block;
+    width: 22%;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }

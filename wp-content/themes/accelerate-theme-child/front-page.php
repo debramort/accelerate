@@ -49,9 +49,58 @@ get_header(); ?>
 	</div>
 </section>
 
+
+<!--Our Services -->
+<section class="our-services">
+	<div class="site-content clearfix">
+    <?php while ( have_posts() ) : the_post();
+        
+        $service_image_1 = get_field('serviceimg_1'); 
+        $service_image_2 = get_field('serviceimg_2');
+        $service_image_3 = get_field('serviceimg_3');
+        $service_image_4 = get_field('serviceimg_4');
+	    $size = "full";
+    ?>
+
+
+		<h4>Our Services</h4>
+			<div>
+                <ul>
+                    <li class="quarter-width">
+                        <img src="<?php the_field('serviceimg_1'); ?>" alt="" />
+                        <h3><?php the_field('service1'); ?></h3>
+                        
+
+                        
+                    </li>
+                    <li class="quarter-width">
+                        <img src="<?php the_field('serviceimg_2'); ?>" alt="" />
+                        <h3><?php the_field('service2'); ?></h3>
+                    </li>
+                    <li class="quarter-width">
+                        <img src="<?php the_field('serviceimg_3'); ?>" alt="" />
+                        <h3><?php the_field('service3'); ?></h3>
+                    </li>
+                    <li class="quarter-width">
+                        <img src="<?php the_field('serviceimg_4'); ?>" alt="" />
+                        <h3><?php the_field('service4'); ?></h3>
+                    </li>
+                    
+                    
+                </ul>    
+
+
+            </div>
+    <?php endwhile; // end of the loop. ?>
+    <?php wp_reset_query(); // resets the altered query back to the original ?>
+	</div>
+</section>
+
+
 <!-- RECENT BLOG POST -->
 <section class="recent-posts">
 	<div class="site-content">
+        <div class = "blog-tweet">
 		<div class="blog-post">
 			<h4>From the Blog</h4>
 			<?php query_posts('posts_per_page=1'); ?>
@@ -62,6 +111,20 @@ get_header(); ?>
 				<?php endwhile; // end of the loop. ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
 		</div>
+        
+        <div class = "twitter-app">
+            <h4>Recent Tweet</h4>           
+            <h3 class="widget-title"><a target="_blank" href="https://twitter.com/debramort2">@Accelerate</a></h3>
+            <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+                <div id="secondary" class="widget-area" role="complementary">
+                    
+	        <?php dynamic_sidebar( 'sidebar-2' ); ?>
+                </div>
+            
+            <?php endif; ?>
+            <a class="read-more-link" href="http://twitter.com">Follow Us ›</a>
+        </div>
+        </div>    
 	</div>
 </section>
 
